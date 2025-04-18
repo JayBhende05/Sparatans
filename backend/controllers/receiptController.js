@@ -57,7 +57,7 @@ export const generateReceipt = async (req, res) => {
         doc.moveDown();
 
         // Footer
-        doc.fontSize(12).text('Thank you for your booking!', { align: 'center' });
+        doc.fontSize(13).text('Thank you for your booking!', { align: 'center' });
         doc.text('For any queries, please contact our support team.', { align: 'center' });
 
         doc.end();
